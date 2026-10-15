@@ -1,0 +1,26 @@
+{
+  "name": "storeforge",
+  "version": "0.7.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "doctor": "node scripts/doctor.mjs",
+    "keygen": "node scripts/keygen.mjs",
+    "check:source": "node scripts/check-source.mjs"
+  },
+  "dependencies": {
+    "next": "16.3.8",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.30",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "typescript": "5.8.3"
+  }
+}
