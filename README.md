@@ -1,17 +1,28 @@
 # StoreForge
 
-Product research and storefront generation workspace with media processing and visual review workflows.
+I built StoreForge to bring product research and storefront preparation into one workflow. I start with a product URL, review the available information and media, and prepare an unpublished storefront to inspect.
 
-## Technology
+I included product and reference research, media processing, generated page sections, and a visual review loop. I kept unsupported merchant details flagged rather than filling in prices, reviews, or guarantees without evidence.
 
-Next.js, TypeScript, React.
+## Built with
 
-## Run locally
+I used Next.js, React, and TypeScript. The media tools use FFmpeg, and the optional research features use external services.
 
-Use Node.js and npm. Run `npm ci`, copy `.env.example` to a local `.env`, configure your own development services, and run `npm run dev`. See the project guide for integration and media-processing prerequisites. No merchant data or storefront output is included.
+## Inside the project
 
-## Portfolio snapshot
+* `src/app/`: the web interface and routes.
+* `src/lib/`: research, media, and storefront services.
+* `scripts/`: local setup and source checks.
+* `docs/`: setup notes and development history.
 
-This repository contains a source snapshot of a personal project. Personal records, credentials, browser sessions, local databases, and generated output are excluded. Use your own configuration and fictional data when evaluating it. Some integrations require external accounts or additional setup. This is a development project, with feature limitations documented in the source and guides.
+## Running it
 
-See [the project guide](PROJECT_GUIDE.md) for implementation details and earlier development notes. Verification claims in that guide describe the original working copy; they are not a fresh end-to-end test of this portfolio snapshot.
+I install dependencies with `npm ci`, copy `.env.example` to my local environment file, and configure the services I want to use. I start the interface with `npm run dev`.
+
+I keep merchant credentials and generated storefront files outside version control. Store creation and publishing still depend on my own connected services and account permissions.
+
+## More detail
+
+* [Project guide](PROJECT_GUIDE.md)
+* [Architecture](ARCHITECTURE.md)
+* [Local setup](START_HERE.md)
